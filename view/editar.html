@@ -1,0 +1,14 @@
+<form ng-submit="update()">
+	<h2>Nuevo Registro</h2>
+	<fieldset>
+		<label>NOMBRES</label>
+		<input type="text" required ng-model="newContact.name">
+		<input type="hidden" ng-model="newContact.id">
+	</fieldset>
+	<fieldset>
+		<label>DNI</label>
+		<input type="text" required ng-model="newContact.dni">
+	</fieldset>
+	<button type="submit">Guardar</button>
+	<button ng-click="cancel()">Cancelar</button>
+</form>

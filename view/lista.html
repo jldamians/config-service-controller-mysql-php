@@ -1,0 +1,16 @@
+<form>
+	<h2>Listar Registros</h2>
+	<a href="#/nuevo">Nuevo Registro</a>
+	<ol>
+		<li ng-repeat="contact in contacts">
+			<label>Nombres: {{contact.name}}</label>
+			<br>
+			<label>Dni: {{contact.dni}}</label>
+			<br>
+			<button type="button" ng-click="edit(contact.id)">Editar</button>
+			<button type="button" ng-click="delete(contact.id)">Eliminar</button>
+			<hr>
+		</li>
+	</ol>
+</form>
+{{contacts}}
